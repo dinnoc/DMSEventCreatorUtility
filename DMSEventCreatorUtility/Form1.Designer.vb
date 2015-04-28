@@ -34,6 +34,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblStatus = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.TblLocBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DsAll, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,7 +76,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(144, 134)
+        Me.Label1.Location = New System.Drawing.Point(144, 130)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 17)
         Me.Label1.TabIndex = 2
@@ -119,11 +120,19 @@ Partial Class Form1
         Me.lblStatus.TabIndex = 6
         Me.lblStatus.Text = "LineRunning"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(50, 355)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(553, 22)
+        Me.TextBox1.TabIndex = 7
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(645, 416)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -150,4 +159,5 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents lblStatus As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class
